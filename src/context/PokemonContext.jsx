@@ -7,6 +7,9 @@ export const PokemonContextProvider = ({ children }) => {
  
     const [pokemons,setPokemons] = useState()
 
+    const [user,setUser]  = useState()
+
+
     useEffect(() => {
         getPokemons().then((data) => setPokemons(data))
     },[])
@@ -14,7 +17,8 @@ export const PokemonContextProvider = ({ children }) => {
 
     return (
         <Context.Provider value={{
-            pokemons:[pokemons,setPokemons]
+            pokemons:[pokemons,setPokemons],
+            user:[user,setUser]
         }} >
             {children}
         </Context.Provider>
