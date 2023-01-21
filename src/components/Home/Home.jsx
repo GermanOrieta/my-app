@@ -1,4 +1,11 @@
-export const Home = () => ( <h1>Hola esto es el home ya estoy loogueado</h1>)
-    
-       
-    
+import { ChoosePokemons } from "../ChoosePokemons/ChoosePokemons";
+
+export const Home = () => (
+
+    <ChoosePokemons />
+
+
+)
+
+
+

@@ -1,1 +1,2 @@
-export {getPokemons} from './getPokemons'
+export { getPokemons } from './getPokemons'
+export { getPokemonsInfo } from './getPokemonsInfo'
